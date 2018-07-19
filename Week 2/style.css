@@ -1,0 +1,35 @@
+.zero{
+  text-align: center;
+  border-style: double;
+  color: green;
+font-style: italic;
+}
+
+.one{
+  margin:50px;
+  font-style: italic;
+}
+
+.two{
+color: red;
+margin: 50px;
+}
+
+li{
+  font-size: 15px;
+  color: orange;
+  font-style: italic;
+}
+
+#main-heading{
+  background-color:aqua;
+  font-size: 20px;
+  font-style: italic;
+
+}
+
+.three{
+font-style: italic;
+font-size: 18;
+
+}
