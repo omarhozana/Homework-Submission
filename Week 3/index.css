@@ -1,0 +1,116 @@
+#grid-floats .grid-item {
+  color: blue;
+  float:left;
+  width: 23%;
+  border:1px solid black;
+  display: block;
+  overflow: auto;
+  margin: 5px;
+  height: 250px;
+
+}
+h1{
+  color: darkcyan;
+  text-align: center;
+  font-style: italic;
+  font-size: 60px;
+
+}
+h2{
+  display: block;
+  clear: both;
+  color: deeppink;
+  font-style: oblique;
+  font-size: 40px;
+
+}
+
+h3{
+  color: green;
+  font-size: 22px;
+  font-style: italic;
+}
+img{
+  width: 25%;
+}
+
+li{
+  list-style: none;
+}
+
+#grid-floats .grid-item.drone1{
+  width: 47%;
+}
+
+
+ img{
+   width: 25%;
+}
+
+#grid-flex .grid-item {
+  color: brown;
+  flex-direction: row;
+  width: 23%;
+  border:1px solid black;
+  margin: 5px;
+  height: 250px;
+  overflow: auto;
+}
+
+
+
+@media (max-width:768px){
+#grid-floats .grid-item {
+   color: red;
+   width: 45%;
+ }
+ #grid-floats .grid-item.drone1{
+   width: 100%;
+ }
+
+
+ @media (min-width:1023px){
+ #grid-floats .grid-item{
+   color: orange;
+   width: 33%;
+ }
+ #grid-floats .grid-item.drone1{
+   width: 50%;
+ }
+ @media screen (min-width:1024px){
+#grid-floats .grid-item{
+  color: pink;
+  width: 23%;
+ }
+#grid-floats .grid-item.drone1{
+  width: 50%;
+}
+
+
+
+@media (max-width:768px){
+#grid-flex .grid-item {
+   color: red;
+   width: 45%;
+ }
+ #grid-flex .grid-item.drone1flex{
+   width: 100%;
+ }
+
+
+ @media (min-width:1023px){
+ #grid-flex .grid-item{
+   color: orange;
+   width: 33%;
+ }
+ #grid-flex .grid-item.drone1flex{
+   width: 50%;
+ }
+ @media screen (min-width:1024px){
+#grid-flex .grid-item{
+  color: pink;
+  width: 23%;
+ }
+#grid-flex .grid-item.drone1flex{
+  width: 50%;
+}
