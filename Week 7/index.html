@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<head>
+  <title>My First Chatbot</title>
+<script>
+var replay ={input:"hello" ,output:"hey"};
+console.log(replay);
+function reply(){
+var question=  document.getElementById("input").value;
+if (question==replay.input){
+  document.getElementById('output').value=replay.output;
+}else {
+    document.getElementById('output').value="I don't understand that command. Please enter another";
+}
+
+}
+</script>
+  <style>
+    button {
+       font-family: Helvetica;
+       font-size: 10pt;
+       width: 92px;
+       }
+    textarea {
+       font-family: arial;
+       font-size: 10pt;
+       }
+    body {
+        color: #333;
+        background-color: #efefef;
+        font: 13px helvetica,arial,freesans,clean,sans-serif;
+    }
+    #demo {
+        width: 80%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+
+        background-color: #F8F8F8;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px #999;
+        line-height: 1.4em;
+        font: 13px helvetica,arial,freesans,clean,sans-serif;
+        color: black;
+    }
+    #demo input {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        width: 400px;
+    }
+    #demo textarea {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        width: 800px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+    textarea:focus {
+        outline: none;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div id="demo">
+
+      <h1> My first chatbot! </h1>
+      <h3> Talk to your bot!</h3>
+      <input id="input" type="text" placeholder="Say something" />
+      <button id="submit" onclick="reply()">Submit</button>
+      <br />
+
+      <h3> Chat history </h3>
+      <div id="chatBot">
+          <textarea id="output" name="ChatHistory" rows="15"></textarea><br />
+      </div>
+
+  </div>
+</body>
+
+</html>
